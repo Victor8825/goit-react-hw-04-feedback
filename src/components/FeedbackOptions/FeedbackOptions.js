@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Box } from '../Box.styled';
 import { StyledFeedbackOptions } from './FeedbackOptions.styled';
 
-const FeedbackOptions = ({ onLeaveFeedback, options }) => {
+export const FeedbackOptions = ({ onLeaveFeedback, options }) => {
   return (
     <StyledFeedbackOptions>
       <Box gridGap={4} mb={20}>
@@ -25,8 +25,6 @@ const FeedbackOptions = ({ onLeaveFeedback, options }) => {
     </StyledFeedbackOptions>
   );
 };
-
-export default FeedbackOptions;
 
 FeedbackOptions.propTypes = {
   onLeaveFeedback: PropTypes.func.isRequired,
